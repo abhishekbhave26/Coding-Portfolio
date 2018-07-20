@@ -1,0 +1,3 @@
+hello this is text file
+this is second line
+tis is 3rd line
