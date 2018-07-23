@@ -1,2 +1,2 @@
-# Basic-Java-Programs
+# Java-Programs
 This repository contains basic java programs.
