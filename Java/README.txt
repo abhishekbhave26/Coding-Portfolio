@@ -1,5 +1,12 @@
 OTP Generator & Authenticator
 
+Files Required:
+README.txt for instructions
+OTP_Generator.java
+mail.jar
+activation.jar
+OTP Generator & Authenticator.iml
+
 This is a small java based project where you enter a email id and using JavaMailAPI the application sends a OTP(one time password) to your email id.
 Once the OTP is received on the email,enter it into the prompt and it checks or authenticates the user.
 
