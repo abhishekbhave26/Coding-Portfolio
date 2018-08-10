@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="mr">
+<head>
+<meta name="keywords" content="swadhar,mumbai">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="utf-8" />
+<style>
+
+
+</style>
+<title> Swadhar Mumbai </title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<div class="basic"><b>
+<img class="logo" src="swadhar pics\logo.jpg" >Swadhar Mumbai </b>
+</div>
+<a href="index.html"><div class="option1"> Home </div></a> 		<!nav links>
+<a href="about.html"><div class="option2"> About Us</div></a> 
+<a href="gallery.html"><div class="option3"> Gallery </div></a>
+<a href="contact.html"><div class="option4"> Contact Us </div></a>
+<a href="help.html"><div class="option5"> Get Associated </div></a>
+</head>
+<body>
+<div class="w3-content w3-section">  <!auto slider pics> 
+  <img class="mySlides2" src="swadhar pics\16.jpg" >
+  <img class="mySlides2" src="swadhar pics\19.jpg" >
+  <img class="mySlides2" src="swadhar pics\20.jpg" >
+  <img class="mySlides2" src="swadhar pics\23.jpg" >
+  <img class="mySlides2" src="swadhar pics\24.jpg" >
+  <img class="mySlides2" src="swadhar pics\25.jpg" >
+  <img class="mySlides2" src="swadhar pics\26.jpg" >
+  <img class="mySlides2" src="swadhar pics\27.jpg" >
+  <img class="mySlides2" src="swadhar pics\28.jpg" >
+  <img class="mySlides2" src="swadhar pics\29.jpg" >
+  <img class="mySlides2" src="swadhar pics\21.jpg" >
+  <img class="mySlides2" src="swadhar pics\30.jpg" >
+  <img class="mySlides3" src="swadhar pics\49.jpg" >
+ 
+</div>
+<div class="w3-content w3-section">  <!auto slider pics> 
+  <img class="mySlides3" src="swadhar pics\36.jpg" >
+  <img class="mySlides3" src="swadhar pics\37.jpg" >
+  <img class="mySlides3" src="swadhar pics\38.jpg" >
+  <img class="mySlides3" src="swadhar pics\39.jpg" >
+  <img class="mySlides3" src="swadhar pics\40.jpg" >
+  <img class="mySlides3" src="swadhar pics\41.jpg" >
+  <img class="mySlides3" src="swadhar pics\42.jpg" >
+  <img class="mySlides3" src="swadhar pics\43.jpg" >
+  <img class="mySlides3" src="swadhar pics\44.jpg" >
+  <img class="mySlides3" src="swadhar pics\45.jpg" >
+  <img class="mySlides3" src="swadhar pics\46.jpg" >
+  <img class="mySlides3" src="swadhar pics\47.jpg" >
+  <img class="mySlides3" src="swadhar pics\48.jpg" >
+ 
+  
+</div>
+
+<script>
+var myIndex = 0; 	//start of auto slideshow
+carousel();
+function carousel() 
+{
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    for (i = 0; i < x.length; i++) 
+	{
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500); // Change image every 2.5 seconds
+}				 	// end of auto slideshow
+
+var myIndex1 = 0; 	//start of auto slideshow
+carousel1();
+function carousel1() 
+{
+    var j;
+    var y = document.getElementsByClassName("mySlides3");
+    for (j = 0; j < y.length; j++) 
+	{
+       y[j].style.display = "none";  
+    }
+    myIndex1++;
+    if (myIndex1 > y.length) {myIndex1 = 1}    
+    y[myIndex1-1].style.display = "block";  
+    setTimeout(carousel1, 2500); // Change image every 2.5 seconds
+}				 	// end of auto slideshow
+</script>
+
+</body>
+</html>

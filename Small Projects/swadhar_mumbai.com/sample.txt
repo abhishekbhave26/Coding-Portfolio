@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="mr">
+<head>
+<meta name="keywords" content="swadhar,mumbai">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="utf-8" />
+<style>
+th, td {
+    padding: 20px;
+}
+td{
+    text-align: left;
+}
+th{
+    text-align: left;
+}
+</style>
+<title> Swadhar Mumbai </title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<div class="basic"><b>
+Swadhar Mumbai </b>
+</div>
+<div class="nav-background">
+<a href="index.html"><div class="option1"> Home </div></a>               <!nav links>
+<a href="about.html"><div class="option2"> About Us</div></a> 
+<a href="gallery.html"><div class="option3"> Gallery </div></a>
+<a href="contact.html"><div class="option4"> Contact Us </div></a>
+</div>
+</head>
+<body>
+<div class="about">
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<section class="footer">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-9">
+					<ul class="bottomlink">
+						<li><a>©Swadhar IDWC. All right reserved.</a></li>
+						<!-- <li><a href="#">Disclaimer</a></li>
+						  <li><a href="#">Faqs</a></li> -->
+						<li><a href="http://www.iarianatech.com/" target="_new">Designed
+								by iAriana Technologies Pvt.Ltd. </a></li>  
+
+
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="social2">
+						<li><a href="https://www.facebook.com/swadharIDWC" target="_new"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/swadhar-idwc" target="_new"><i class="fa fa-linkedin"></i></a></li>
+
+
+					</ul>
+
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+
+		</div>
+	</section>
+	
+	
+
+
+
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
