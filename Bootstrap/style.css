@@ -1,0 +1,14 @@
+html,body
+{
+    height: 100%;
+    
+}
+
+#c
+{
+    background: #222 url=('stars.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    text-align: center
+}
