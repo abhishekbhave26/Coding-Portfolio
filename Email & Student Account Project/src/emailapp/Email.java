@@ -7,7 +7,7 @@ public class Email
     private String firstname,lastname,password,department,alternate_email,email;
     private int mailBoxCapacity=500;
     private int defaultpasswordLength=10;
-    private String companySuffix="mycompany.com";
+    private String companySuffix="buffalo.edu";
 
     // Constructor asks fname and lname
 
@@ -15,32 +15,36 @@ public class Email
     {
         this.firstname = firstname;
         this.lastname = lastname;
-        System.out.println("EMAIL CREATED FOR :"+this.firstname+" "+this.lastname);
+
 
         this.department=setDepartment();
-        System.out.println("Department :"+this.department);
-
-        this.password=randomPassword(defaultpasswordLength);
-        System.out.println("Your password is "+this.password);
+        System.out.println("Department : "+this.department);
 
         email=firstname.toLowerCase()+"."+lastname.toLowerCase()+"@"+department+"."+companySuffix;
         System.out.println("Email is :"+email);
 
+
+        this.password=randomPassword(defaultpasswordLength);
+        System.out.println("Your password : "+this.password);
 
     }
 
     // ask dept
     private String setDepartment()
     {
-        System.out.println("Enter the department \n1 Sales \n2 Development \n3 Accounting \n0 None");
+        System.out.println("Enter the department \n1 Computer Science \n2 Electrical \n3 Mechanical \n4 Chemical \n5 Civil\n0 None");
         Scanner sc =new Scanner(System.in);
         int depChoice=sc.nextInt();
         if(depChoice==1)
-            return "sales";
+            return "Computer Science";
         else if(depChoice==2)
-            return "dev";
+            return "Electrical";
         else if(depChoice==3)
-            return "acct";
+            return "Mechanical";
+        else if(depChoice==4)
+            return "Chemical";
+        else if(depChoice==5)
+            return "Civil";
         else
             return "";
 
@@ -58,6 +62,8 @@ public class Email
         }
         return new String(password);
     }
+
+
 
 
 
