@@ -1,0 +1,7 @@
+This project is a email and student account creator project.It is written completely in java and involves 2 packages made by me and demonstrate the object oriented concepts .
+In this project ,I have made an attempt to demonstrate concepts like classes,objects,arrays,array of objects,constructors,etc.
+
+To run this project,download the zip file and run the StudentDatabaseaApp.java file.
+
+This project involves creates of email account for student and generating random password depending on name and department.
+Also,student services like course and enrollment and tuition payment are included in this project. 
