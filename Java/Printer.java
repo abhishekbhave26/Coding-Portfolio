@@ -1,3 +1,6 @@
+
+// small java program for printer status and ink level
+
 public class Printer {
 
 private int tonerLevel,pagesPrinted;

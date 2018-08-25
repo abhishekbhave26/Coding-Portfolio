@@ -17,6 +17,7 @@ public class StudentDatabaseApp {
 
 
         // create students
+	// array of objects
 
         Student students[]=new Student[number_of_students];
         for(int n=0;n<number_of_students;n++)

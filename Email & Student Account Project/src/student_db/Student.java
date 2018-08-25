@@ -8,7 +8,8 @@ public class Student {
     private int tuitionBalance = 0, gradeYear;
     private static int ID = 1000, costOfCourse = 600;
 
-    //constructor
+    
+	//constructor
 
 
     public Student() {
@@ -84,6 +85,8 @@ public class Student {
 
 
     }
+
+	getters
 
     public String getFirstName() {
         return firstName;

@@ -1,3 +1,5 @@
+// class for implementing vehicle
+
 public class Vehicle
 {
     private int currentDirection, currentSpeed;

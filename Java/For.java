@@ -1,3 +1,6 @@
+// implementing for loop to calculate interest  
+
+
 import java.util.*;
 public class For
 {

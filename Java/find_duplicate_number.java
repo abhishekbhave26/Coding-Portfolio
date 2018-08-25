@@ -4,7 +4,8 @@ import java.util.HashSet;
 
 public class find_duplicate_number
 {
-    public static int findDuplicate(int[] nums)
+    // function to find duplicate number in java using hash set
+      public static int findDuplicate(int[] nums)
     {
         int x=0;
         HashSet s=new HashSet<Integer>();

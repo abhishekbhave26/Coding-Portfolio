@@ -1,3 +1,5 @@
+// class for implementing VIP bank
+
 public class VipBank
 {
     private String name,email;

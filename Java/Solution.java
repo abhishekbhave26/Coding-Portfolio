@@ -1,3 +1,5 @@
+//to find majority element
+
 import java.util.*;
 
 class Solution {

@@ -2,6 +2,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
+// program to implement Linked List
+
 public class Demo {
     public static void main(String[] args) {
         LinkedList<String> linkedList = new LinkedList<String>();

@@ -1,3 +1,5 @@
+// application to select burger and extras and price displayed
+
 public class Main5
 {
     public static void main(String[] args) {

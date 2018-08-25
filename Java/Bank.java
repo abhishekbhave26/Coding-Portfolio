@@ -1,3 +1,5 @@
+// simple bank account application in java
+
 public class Bank
 {
     private long account_number,balance;
