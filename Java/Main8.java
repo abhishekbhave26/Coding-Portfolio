@@ -11,7 +11,7 @@ public class Main8
 
     public static List<Integer> selfDividingNumbers(int left, int right)
     {
-        ArrayList<Integer> list=new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         int n=0,i;
         for(int number=left;number<=right;number++)
         {
