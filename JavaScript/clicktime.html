@@ -1,0 +1,50 @@
+<html>
+    <head>
+          <title> JavaScript Stop Watch </title> 
+        <style text="text/css"> 
+        
+        <link rel="stylesheet" href="clicktime.css">
+        
+        
+        </style> 
+        <script type="text/javascript"> 
+        <link rel="javascript" href="clicktime.js">
+        
+        
+        
+        
+        
+        </script> 
+    </head>
+    <body>
+        <section id="stopWatch"> 
+            
+            <p id="timer"> Time : 00:00:00 </p> <button id="start"> Start </button>
+            <button id="stop"> Stop </button> <p id="fulltime"> </p>
+        </section>
+    </body> 
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <table id="myTable" cellpadding="2" cellspacing="2" border="1" onclick="tester()"></table>
+        <script>
+            var student;
+            for (var j = 0; j < 10; j++) 
+            {
+                student = 
+                {
+                    name: "Time start" + j,
+                    rank: "Time stop" + j,
+                    stuclass: "Class" + j,
+                };
+                var table = document.getElementById("myTable");
+                var row = table.insertRow(j);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+
+                cell1.innerHTML = student.name,
+                cell2.innerHTML = student.rank,
+                cell3.innerHTML = student.stuclass;
+            }
+        </script>
+    </body>
+</html>
