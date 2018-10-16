@@ -79,26 +79,45 @@ class SinglyLinkedList:
             prev = current 
             current = next
         self.head = prev
+    
+    def insertNodeAtPosition(self,data, position):
+        i = 0
+        newNode = Node(data)
+        if position is 0:
+            head=self.head
+            newNode.next = head
+            head = newNode
+            return head
+        curr = self.head
+        while i is not position - 1:
+            curr = curr.next
+            i+= 1
+        prev = curr
+        next = curr.next
+        prev.next = newNode
+        newNode.next = next
+        return self.head
 
 
 s=SinglyLinkedList()
 s.append(5)
 s.append(6)
-s.prepend(4)
-s.prepend(1)
+s.append(7)
+s.append(8)
 s.append(10)
 s.append(20)
-s.display()
+#s.display()
 #s.delete(5)
 #s.delete(1)
 #s.delete(20)
 #s.delete(10)
 #s.delete(6)
 #s.delete(4)
-print('Now reversing')
-s.reverse()
-s.display()
+#print('Now reversing')
+#s.reverse()
+#s.display()
 
-        
+x=s.insertNodeAtPosition(500,4)
+s.display()       
         
         
