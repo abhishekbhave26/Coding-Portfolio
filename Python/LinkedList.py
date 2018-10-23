@@ -45,6 +45,7 @@ class SinglyLinkedList:
                 print('Data deleted')
                 return
             current=current.next
+
         
     
     def find(self,data):
@@ -117,6 +118,7 @@ s.append(20)
 #s.display()
 
 x=s.insertNodeAtPosition(500,4)
+#s.insertNodeAtTail(30)
 s.display()       
         
         
