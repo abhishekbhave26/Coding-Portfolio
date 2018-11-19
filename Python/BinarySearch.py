@@ -20,8 +20,14 @@ class Solution(object):
         else:
             return -1
         '''
-        length=len(nums)
-        right=nums[0]
-        left=nums[length-1]
-        while(left>=right):
-            pass
+        
+        left, right = 0, len(nums) - 1
+        while left <= right:
+            mid = (left + right) // 2
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] > target:
+                right = mid - 1
+            else:
+                left = mid + 1
+        return -1
