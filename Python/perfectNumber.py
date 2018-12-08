@@ -32,3 +32,5 @@ class Solution(object):
 s=Solution()
 print(s.checkPerfectNumber(28))
 
+
+
