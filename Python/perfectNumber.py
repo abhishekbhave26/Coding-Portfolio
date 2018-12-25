@@ -28,9 +28,34 @@ class Solution(object):
             return True
         else:
             return False
+        
+    def checkPerfectNumber2(self, num):
+         
+        sum=0
+        ncopy=num
+        if(ncopy%2==0):
+            mid=ncopy/2
+            sum+=1
+            x=1
+        else:
+            mid=int((ncopy/2)+0.5)
+            sum+=1
+            x=2
+
+            
+        mid=int(mid)   
+        for i in range(2,mid+1,x):
+            if(ncopy%i==0):
+                sum+=i
+                print(i)
+        
+        if(sum==num):
+            return True
+        else:
+            return False
 
 s=Solution()
-print(s.checkPerfectNumber(28))
+print(s.checkPerfectNumber2(28))
 
 
 
