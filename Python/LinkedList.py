@@ -4,6 +4,8 @@ Created on Tue Oct  2 12:29:21 2018
 
 @author: abhis
 """
+import numpy as np
+ 
 
 class Node:
     

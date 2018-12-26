@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="mr">
+<head>
+<meta name="keywords" content="swadhar,mumbai">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="utf-8" />
+<style>
+@media screen and (max-width:700px)
+{
+.nav-background
+{
+ width:100%;
+}
+.basic
+{
+ width:100%;
+}
+.option1
+{
+width:20%;
+}
+.option2
+{
+width:20%;
+}
+.option3
+{
+width:20%;
+}
+.option4
+{
+width:20%;
+}
+.option5
+{
+width:20%;
+}
+
+}
+
+</style>
+<title> Swadhar Mumbai </title>
+
+<link rel="stylesheet" type="text/css" href="main.css">
+<div class="basic"><b>
+<img class="logo" src="swadhar pics\logo.jpg" > Swadhar Mumbai </b></div>
+<div class="nav-background">
+<a href="index.html"><div class="option1"> Home </div></a>               <!nav links>
+<a href="about.html"><div class="option2"> About Us</div></a> 
+<a href="gallery.html"><div class="option3"> Gallery </div></a>
+<a href="contact.html"><div class="option4"> Contact Us </div></a>
+<a href="help.html"><div class="option5"> Get Associated </div></a>
+</div>
+</head>
+<body>
+<div class="w3-content w3-section"> 
+  <img class="mySlides" src="swadhar pics\1.jpg" >                        <!auto slider pics> 
+  <img class="mySlides" src="swadhar pics\52.jpg" >
+  <img class="mySlides" src="swadhar pics\3.jpg" >
+  <img class="mySlides" src="swadhar pics\4.jpg" >
+  <img class="mySlides" src="swadhar pics\5.jpg" >
+  <img class="mySlides" src="swadhar pics\6.jpg" >
+  <img class="mySlides" src="swadhar pics\7.jpg" >
+  <img class="mySlides" src="swadhar pics\8.jpg" >
+  <img class="mySlides" src="swadhar pics\9.jpg" >
+</div>
+<div class="intro">
+ स्वाधार संस्थेची स्थापना १९८३ साली झुंजार समाजवादी नेत्या मा. मृणाल गोरे यांच्या नेतृत्वाखाली आणि टाटा समाजविज्ञान संस्थेच्या ज्येष्ठ प्राध्यापक मा. मिनाक्षी आपटे यांच्या मार्गदर्शनाखाली झाली. सामाजिक व कौटुंबिक समस्येने ग्रस्त स्त्रियांना त्यांची समस्या सोडविण्यासाठी व आत्मसन्मानाने जगण्यासाठी मार्गदर्शन व मदत करणे हे स्वाधारच्या स्थापनेमागील मुख्य उद्दिष्ट आहे. समाजातील लिंगभावभेद दूर होऊन समाजात स्त्रीपुरुष समानता रुजावी, महिलांना समजात सुरक्षितपणे वावरता यावे या दृष्टीने स्त्रीपुरुषांमध्ये जागृती निर्माण करणे हाही स्वाधारच्या कामाचा महत्वाचा भाग आहे. आजही हे कार्य कार्यकर्त्यांच्या  मेहनतीने आणि हितचिंतकांच्या सहकार्याने सातत्याने चालू आहे.
+ 
+  </div>
+<div class="footer">
+		<div class="container">
+
+
+				
+					
+						<li><a>©Swadhar Mumbai. All right reserved.</a></li>
+						<!-- <li><a href="#">Disclaimer</a></li>
+						  <li><a href="#">Faqs</a></li> -->
+						<li><a href="https://www.facebook.com/abhishek.bhave.58" target="_new">Designed
+								by Abhishek Bhave </a></li>  
+
+
+					
+				
+		</div>
+	</div>
+<script>
+var myIndex = 0; 	//start of auto slideshow
+carousel();
+function carousel() 
+{
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500); // Change image every 2.5 seconds
+}				 	// end of auto slideshow
+
+</script>
+</body>
+</html>
