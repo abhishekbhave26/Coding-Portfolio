@@ -26,3 +26,7 @@ print(check('new'))
 check_rev=lambda s:s[::-1]
 
 print(check_rev('new'))
+
+'''
+syntax
+something=lambda variable:condition

