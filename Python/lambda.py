@@ -30,3 +30,4 @@ print(check_rev('new'))
 '''
 syntax
 something=lambda variable:condition
+'''
