@@ -11,21 +11,48 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        count=0
-        '''
-        if(n==2):
-            return 1
-        count=1
-        '''
-        x=True
-        for i in range(2, n):
-            if n%i == 0:
-                x =False
-                break
-            else:
-                count+=1
+        count=[]
+        if(n>2):
+            count.append(2)
+        i=3
+        while(i<n):
+            x=Solution.isPrime(Solution,i)
+            if(x):
+                count.append(i)
+            i+=2
+        print(count)
+        return len(count)
         
-        return count
+    def isPrime(self,number):
+        for i in range(2,int(number/2)):
+            if(number%i==0):
+                return False
+        return True
 
-s=Solution()
-print(s.countPrimes(10))
+class Solution2():        
+    def countPrimes(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n <= 1:
+            return 0
+        
+        nums = [None] * n
+        nums[0] = False
+        nums[1] = False
+        
+        for i in range(n):
+            if nums[i] == None:
+                nums[i] = True
+                
+                # set all multiples of i to False
+                for j in range(i+i, n, i):
+                    nums[j] = False
+        
+        return sum(nums)
+        
+        
+     
+s=Solution2()
+print(s.countPrimes(3))
