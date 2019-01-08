@@ -4,9 +4,8 @@
         public static void main(String[] args)
         {
             PlusOne p=new PlusOne();
-            int new[]=new int[100];
-            System.out.println(p.plusOne([2,4,7]));
-            System.out.println(p.plusOne([2,9]));
+            int a []=new int[100];
+
 
         }
         public int[] plusOne(int[] digits)
