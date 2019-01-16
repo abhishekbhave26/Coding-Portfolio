@@ -7,22 +7,25 @@ Created on Mon Oct 22 00:12:09 2018
 #valid parenthesis 
 #leetcode 20
 
-class Solution:
+class Solution(object):
     def isValid(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        list=[]
-        if(s[0]==')' or s[0]=='}' or s[0]==']' ):
-            return False
-        for i in s:
-            if(s[i]=='(' or s[i]=='{' or s[i]=='[' ):
-                list.append(s[i])
-                flag=False
-        for i in list:
-            pass
-        return True
+        
+        stack = []
+        mapping = {")": "(", "}": "{", "]": "["}
+        for char in s:
+            if char in mapping:
+                top_element = stack.pop() if stack else '#'
+                if mapping[char] != top_element:
+                    return False
+            else:
+                stack.append(char)
+        return not stack
+    
+    
+        
+        
+        
+        
             
 s=Solution()
 print(s.isValid('[()]'))
