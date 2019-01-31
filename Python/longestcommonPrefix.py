@@ -1,40 +1,28 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Oct 23 00:27:40 2018
+Created on Sat Jan 26 00:11:52 2019
 
 @author: abhis
 """
+#leetcode 14
 
-class Solution:
+class Solution(object):
     def longestCommonPrefix(self, strs):
-       
-        new=[]
-        v=0
-        x=min(strs)
-        length=len(x)
-        #print(length)
-        for j in range(0,length):
-            list=[]
-            for i,v in enumerate(strs):
-                s=strs[i][j]
-                
-                list.append(s)
-            print(list) 
-            
-            for i in range(len(list)-1):
-                if(list[i]==list[i+1]):
-                    pass
-                else:
-                    return ""
-                
-            new.append(list[i])
-        s=''
-        print(new)
-        for i in new:
-            s+=new[i]
-        return s 
-
+        """
+        :type strs: List[str]f
+        
+        :rtype: str
+        """
+        if not strs:
+            return ""
+        shortest = min(strs,key=len)
+        for i, ch in enumerate(shortest):
+            for other in strs:
+                if other[i] != ch:
+                    return shortest[:i]
+        return shortest
+    
+    
 s=Solution()
-a=['dagaa','dagaa','dagaa','daga']
-print(s.longestCommonPrefix(a))
+x=s.longestCommonPrefix(["flower","flow","flight"])
         
