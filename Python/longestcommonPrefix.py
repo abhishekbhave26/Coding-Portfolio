@@ -16,6 +16,7 @@ class Solution(object):
         if not strs:
             return ""
         shortest = min(strs,key=len)
+        print(shortest)
         for i, ch in enumerate(shortest):
             for other in strs:
                 if other[i] != ch:
