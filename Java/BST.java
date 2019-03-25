@@ -106,6 +106,7 @@ public class BST
         b.insert(10);
         //b.postOrder();
         System.out.println(b.contains(9));
+        System.out.println("Hello");
     }
 }
 
