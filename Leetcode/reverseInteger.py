@@ -33,7 +33,36 @@ class Solution:
                 temp=temp[::-1] 
         x=int(temp)
         return x
+    
+    #my latest code
+    def reverse2(self, x):
+        new=str(x)
+        res=''
+        rev=''
+        for i in range(0,len(new)):
+            if new[i].isnumeric:
+                rev+=new[i]
+            else:
+                res+=new[i]
+                rev=rev*-1
+        res+=rev[::-1]
+        final=''
+        l=len(res)
+        if(res[l-1]=='-'):
+            final=res[0:l-1]
+            final=int(final)
+            if(-1*final<pow(-2,31)):
+                return 0
+            else:
+                return -1*final
+        else:
+            if(int(res)>pow(2,31)-1):
+                return 0
+            else:
+                return int(res)
+    
+                 
             
 s=Solution()
-print(s.reverse(-901000))
+print(s.reverse2(120))
             
