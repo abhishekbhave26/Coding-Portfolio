@@ -5,6 +5,7 @@ Created on Sun Jul  7 17:17:05 2019
 @author: abhis
 """
 #leetcode 3
+#length of longest non repeating subsctring
 
 class Solution:
     #my code n^2 complexity
@@ -53,5 +54,5 @@ class Solution:
         return f[-1]
         
 s=Solution()
-result=s.lengthOfLongestSubstring2('abcabcbb')
+result=s.lengthOfLongestSubstring2('abczbcbb')
 print((result))
