@@ -7,6 +7,7 @@ Created on Wed Jul 31 21:51:28 2019
 #leetcode 686
 
 class Solution:
+    #my soln
     def repeatedStringMatch(self, A: str, B: str) -> int:
         x=''
         s=int(10000/len(A))
