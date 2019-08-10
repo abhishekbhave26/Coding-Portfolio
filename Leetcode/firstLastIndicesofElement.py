@@ -16,6 +16,7 @@ class Solution:
             return [x,len(nums)-y-1]
         else:
             return [-1,-1]
+        
     #O(N) solution but slightly faster
     def searchRange3(self, nums, target):
         res=[]
