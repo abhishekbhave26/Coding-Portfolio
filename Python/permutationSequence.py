@@ -9,6 +9,7 @@ Created on Sat Aug 10 12:42:14 2019
 from itertools import permutations
 import math
 class Solution:
+    #my soln
     def getPermutation2(self, n, k):
         x=[]
         for i in range(1,n+1):
