@@ -60,4 +60,7 @@ class Solution:
             r += 1
         return [l+1, r-1]
 
+s=Solution()
+print(s.searchRange([1,2,3,3,4,5,5],5))
+
     
