@@ -13,6 +13,18 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
+        s=set(nums)
+        i=1
+        while i in s:
+            i+=1
+        return i
+    
+    
+    def firstMissingPositive3(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         
         if(len(nums)==0):
             return 1
@@ -23,8 +35,6 @@ class Solution:
             else:
                 return i
         return x+1;
-
-
 
 
 

@@ -8,7 +8,7 @@ import collections as c
 import itertools
 
 class Solution:
-    def findDisappearedNumbers(self, nums):
+    def findDisappearedNumbers2(self, nums):
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -27,8 +27,19 @@ class Solution:
             if(i not in d):
                 new.append(i)
         return new
-        
-            
+    
+    
+    def findDisappearedNumbers(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        s=set(nums)
+        res=[]
+        for i in range(1,len(nums)+1):
+            if i not in s:
+                res.append(i)
+        return res            
     
         
 s=Solution()
