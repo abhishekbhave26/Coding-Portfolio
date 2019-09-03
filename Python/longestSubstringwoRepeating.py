@@ -5,7 +5,7 @@ Created on Sun Jul  7 17:17:05 2019
 @author: abhis
 """
 #leetcode 3
-#length of longest non repeating subsctring
+#length of longest non repeating substring
 
 class Solution:
     #my code n^2 complexity
@@ -48,7 +48,6 @@ class Solution:
 
             elif letter in temp:
                 temp = temp[temp.index(letter)+1:] + letter
-        
         keylist = dic.keys()
         f=(sorted(keylist))
         return f[-1]

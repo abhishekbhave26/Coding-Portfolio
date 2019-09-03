@@ -49,3 +49,7 @@ class Solution2:
                 p2 -= 1
             else:
                 curr += 1
+        print(nums)
+                
+s=Solution2()
+s.sortColors([0,1,2,2,0,1])
