@@ -1,0 +1,14 @@
+C:\Users\abhave\myMicroservice\bin\Debug\netcoreapp2.1\myMicroservice.deps.json
+C:\Users\abhave\myMicroservice\bin\Debug\netcoreapp2.1\myMicroservice.runtimeconfig.json
+C:\Users\abhave\myMicroservice\bin\Debug\netcoreapp2.1\myMicroservice.runtimeconfig.dev.json
+C:\Users\abhave\myMicroservice\bin\Debug\netcoreapp2.1\myMicroservice.dll
+C:\Users\abhave\myMicroservice\bin\Debug\netcoreapp2.1\myMicroservice.pdb
+C:\Users\abhave\myMicroservice\obj\Debug\netcoreapp2.1\myMicroservice.csprojAssemblyReference.cache
+C:\Users\abhave\myMicroservice\obj\Debug\netcoreapp2.1\myMicroservice.csproj.CoreCompileInputs.cache
+C:\Users\abhave\myMicroservice\obj\Debug\netcoreapp2.1\myMicroservice.RazorAssemblyInfo.cache
+C:\Users\abhave\myMicroservice\obj\Debug\netcoreapp2.1\myMicroservice.RazorAssemblyInfo.cs
+C:\Users\abhave\myMicroservice\obj\Debug\netcoreapp2.1\myMicroservice.AssemblyInfoInputs.cache
+C:\Users\abhave\myMicroservice\obj\Debug\netcoreapp2.1\myMicroservice.AssemblyInfo.cs
+C:\Users\abhave\myMicroservice\obj\Debug\netcoreapp2.1\myMicroservice.RazorTargetAssemblyInfo.cache
+C:\Users\abhave\myMicroservice\obj\Debug\netcoreapp2.1\myMicroservice.dll
+C:\Users\abhave\myMicroservice\obj\Debug\netcoreapp2.1\myMicroservice.pdb
