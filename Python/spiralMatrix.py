@@ -35,6 +35,12 @@ class Solution(object):
                 r, c = r + dr[di], c + dc[di]
         return ans
         
-            
+s=Solution()
+x=[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+print(s.spiralOrder(x))
             
         

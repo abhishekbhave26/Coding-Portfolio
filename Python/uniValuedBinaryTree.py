@@ -62,5 +62,31 @@ class Solution:
                     
         a=new(root,x)
         return a
+    
+    
+
+#new code
+        
+class Solution(object):
+    def isUnivalTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        self.res=[]
+        def inorderTrav(root):
+            if root:
+                if(root.left):
+                    inorderTrav(root.left)
+                self.res.append(root.val)
+                if(root.right):
+                    inorderTrav(root.right)
+        inorderTrav(root)
+        nodeSet=set(self.res)
+        if(len(nodeSet)==1):
+            return True
+        else:
+            return False
+ 
         
         
