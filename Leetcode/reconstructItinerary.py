@@ -64,10 +64,8 @@ class Solution:
                 d[ticket[0]] = [ticket[1]]
             else:
                 d[ticket[0]].append(ticket[1])
-                
         for ticket in d:
             d[ticket].sort()
-        
         res = ['JFK']
         end = []
         while d:

@@ -24,7 +24,3 @@ class Solution(object):
                 res.append(i)
         return res
 
-s=Solution()
-print(s.merge([[1,4],[4,6],[4,7],[1,8],[9,10]]))
-            
-        
