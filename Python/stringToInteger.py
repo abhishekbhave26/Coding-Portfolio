@@ -59,7 +59,8 @@ import re
 class Solution(object):
     def myAtoi(self, str):
         out = str.strip()
-        out = re.findall("^[+-]\d+|^\d+", out) 
+        out = re.findall("^[+-]\d+|^\d+", out)
+        print(out)
         try:
             out = int(out[0])
         except:

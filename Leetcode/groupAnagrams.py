@@ -19,6 +19,7 @@ class Solution(object):
             groups["".join(sorted(s))].append(s)
         return list(groups.values())
     
+    
     def groupAnagrams2(self,strs):
         groups = collections.defaultdict(list)
         for s in strs:
@@ -31,6 +32,6 @@ class Solution(object):
 
 x=["eat", "tea", "tan", "ate", "nat", "bat"]
 s=Solution()
-print(s.groupAnagrams2(x))
+print(s.groupAnagrams(x))
 
 
