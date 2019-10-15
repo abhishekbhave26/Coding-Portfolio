@@ -1,22 +1,18 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Oct 23 01:07:34 2018
+Created on Mon Oct 14 02:23:32 2019
 
 @author: abhis
 """
-#leetocode 66
+
+#leetcode 66
 
 class Solution:
-    def plusOne(self, digits):
-        length=len(digits)
-        x=digits.pop()
-        if(x==9 and length==1):
-            digits.append(1)
-            digits.append(0)
-            return digits
+    def plusOne(self, digits: List[int]) -> List[int]:
+        g=''
+        for i in digits:
+            g+=str(i)
+        x=int(g)
         x+=1
-        digits.append(x)
-        return digits
-    
-s=Solution()
-print(s.plusOne([9]))
+        y=str(x)
+        return [g for g in y]
