@@ -21,40 +21,44 @@ class Firewall():
         with open(file) as csvfile:
             readCSV = csv.reader(csvfile, delimiter=',')
             for row in readCSV:
-                    res=self.accept_packet(row[0],row[1],row[2],row[3])
-                    print(res)
-    
-    def checkPort(self,port):
-        if('-' in port):
-            return True
-        else:
-            return False
-    
-    # for processing ip_address
-    def checkIP(self,ip1,ip2):
-        pass
+                res=self.accept_packet(row[0],row[1],row[2],row[3])
+                print(res)
+                
+    #breakdown range into a list and return it
+    def breakdownRange(self,range):
+        resList=[]
+        temp=range.split('-')
+        lower,higher=int(temp[0]),int(temp[1])
+        i=lower
+        while(i<=higher):
+            resList.append(i)
+            i+=1
+        return resList
+        
     
     # processing for port
     def process(self,map,port,ip_address): 
         if('-' in port):
-            temp=port.split('-')
-            lower,higher=int(temp[0]),int(temp[1])
-            if(len(map)==1):
-                if(port not in map):
-                    if(self.checkPort(port)):
-                        
-                else:
-                    
-            else:
-                map[port]=ip_address
+            portList=self.breakdownRange(port)
+            if(len(map)==0):
+                for i in range(portList[0],portList[-1]+1):
+                    map[int(i)]=ip_address
+                return True
+            elif(len(map)>0):
+                for i in range(portList[0],portList[-1]+1):
+                    if(str(i) in map):
+                        if(map[str(i)]!=ip_address):
+                            return False
+                return True
         else:
-            if(len(map)==1):
-                if(port not in map):
-                    return False
-                else:
-                    return self.checkIP(map[port],ip_address)
-        return True
-        
+            if(port not in map and len(map)>0):
+                return False
+            elif(port in map):
+                return map[port]==ip_address
+            elif(len(map)==0):
+                map[port]=ip_address
+                return True
+            
     def accept_packet(self,direction,protocol,port,ip_address):
         # processing for direction and protocol
         if(direction=='inbound'):
@@ -69,8 +73,7 @@ class Firewall():
                 return self.process(self.outboundMapUDP,port,ip_address)
     
         
-fw=Firewall("D:/All Repositories/Coding Portfolio/file.csv")
-#print(fw.accept_packet('inbound','tcp','80','192.168.1.2'))
-    
+fw=Firewall("test.csv")
+print(fw.accept_packet('inbound','udp','50-80','192.168.2.1'))
 
         
