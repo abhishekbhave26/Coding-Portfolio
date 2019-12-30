@@ -14,7 +14,7 @@ class Solution(object):
         :rtype: bool
         """
         #dp solution, passes all test cases
-        dp = [False] * (len(s) + 1) # dp[i] means s[:i+1] can be segmented into words in the             wordDicts 
+        dp = [False] * (len(s) + 1) # dp[i] means s[:i+1] can be segmented into words in the wordDicts 
         dp[0] = True
         for i in range(len(s)):
             for j in range(i, len(s)):
