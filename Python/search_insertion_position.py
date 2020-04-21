@@ -5,7 +5,30 @@ Created on Wed Sep 26 12:59:19 2018
 @author: abhis
 """
 class Solution:
+    
+    #O(log n) binary search soln
     def searchInsert(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        l = 0
+        r = len(nums)
+        while(l<r):
+            mid = (l+r)//2
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] < target:
+                l = mid+1
+            else:
+                r = mid
+        return l
+
+    
+    
+    #O(n) soln
+    def searchInsert2(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -34,5 +57,5 @@ class Solution:
                 
 
 nums=[1,3,5,6]
-print(Solution.searchInsert(Solution,nums,0))
+print(Solution.searchInsert(Solution,nums,4))
             

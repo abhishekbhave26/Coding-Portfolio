@@ -51,6 +51,41 @@ class Solution:
         keylist = dic.keys()
         f=(sorted(keylist))
         return f[-1]
+    
+# sliding window solns
+class Solution2(object):
+    def lengthOfLongestSubstring2(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        dic = {}
+        ans = i = j = 0
+        while(i<len(s) and j<len(s)):
+            if s[j] not in dic:
+                dic[s[j]]=1
+                j+=1
+                ans = max(ans,j-i)
+            else:
+                del dic[s[i]]
+                i+=1
+        return ans
+    
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        dic = {}
+        ans = i = j = 0
+        while(i<len(s) and j<len(s)):
+            if s[j] in dic:
+                i = max(dic[s[j]],i)
+            ans = max(ans, j-i+1)
+            dic[s[j]]= j+1
+            j+=1
+        return ans
+                
         
 s=Solution()
 result=s.lengthOfLongestSubstring2('abczbcbb')

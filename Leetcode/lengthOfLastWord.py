@@ -7,7 +7,7 @@ Created on Wed Jan  2 15:06:29 2019
 #leetcode 58
 
 class Solution:
-    def lengthOfLastWord(self, s):
+    def lengthOfLastWord2(self, s):
         """
         :type s: str
         :rtype: int
@@ -20,7 +20,16 @@ class Solution:
         for i in new:
             s=str(i)
         return len(s)
-        
+    
+    def lengthOfLastWord(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        p = s.split()
+        if p:
+            return len(p[-1])
+        return 0
         
         
 if __name__ == '__main__':

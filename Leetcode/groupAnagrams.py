@@ -27,11 +27,12 @@ class Solution(object):
             for c in s:
                 char_count[ord(c) - ord('a')] += 1
             groups[tuple(char_count)].append(s)
+        print(groups)
         return list(groups.values())
 
 
-x=["eat", "tea", "tan", "ate", "nat", "bat"]
+x=["eat", "tea", "tan", "ate", "nat", "bat","aaaa"]
 s=Solution()
-print(s.groupAnagrams(x))
+print(s.groupAnagrams2(x))
 
 
