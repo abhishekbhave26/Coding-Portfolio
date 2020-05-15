@@ -8,6 +8,22 @@ Created on Thu Jan  3 19:23:25 2019
 
 import math
 
+
+class Solution(object):
+    def isPowerOfTwo(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        if n<1:
+            return False
+        while(n%2==0):
+            n/=2
+        return n==1
+            
+        
+
+
 class Solution2:
     def isPowerOfTwo(self, n):
         """
@@ -23,7 +39,7 @@ class Solution2:
                 return True
         return False
         
-class Solution():
+class Solution3():
     def isPowerOfTwo(self, n):
         """
         :type n: int

@@ -6,7 +6,7 @@ Created on Mon Nov  4 13:18:20 2019
 """
 #leetcode 692
 
-class Solution:
+class Solution2:
     def topKFrequent(self, words, k):
         dic = {}
         for i in words:
@@ -18,7 +18,7 @@ class Solution:
         return ret[:k]
                      
     
-    def topKFrequent2(self, words: List[str], k: int) -> List[str]:
+    def topKFrequent2(self, words,k):
         dic={}
         res=[]
         for i in words:
@@ -46,3 +46,30 @@ class Solution:
             tempList.sort()
             res+=tempList
         return res
+    
+    
+class Solution(object):
+    def topKFrequent(self, nums, k):
+        hs = {}
+        frq = {}
+        for i in range(0, len(nums)):
+            if nums[i] not in hs:
+                hs[nums[i]] = 1
+            else:
+                hs[nums[i]] += 1
+
+        for z,v in hs.items():
+            if v not in frq:
+                frq[v] = [z]
+            else:
+                frq[v].append(z)
+        arr = []
+        for x in range(len(nums), 0, -1):
+            if x in frq:
+                arr.extend(frq[x])                
+                
+        return [arr[x] for x in range(0, k)]
+
+s=Solution()
+x=s.topKFrequent([1,1,1,2,2,3,3],2)
+print(x)

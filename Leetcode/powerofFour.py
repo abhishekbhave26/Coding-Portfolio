@@ -5,7 +5,22 @@ Created on Thu Jan  3 19:51:22 2019
 @author: abhis
 """
 
-class Solution():
+class Solution(object):
+    def isPowerOfTwo(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        if n<1:
+            return False
+        while(n%4==0):
+            n/=4
+        return n==1
+            
+        
+
+
+class Solution2():
     def isPowerOfFour(self,num):
     	# check non-positive
     	if num <= 0:
