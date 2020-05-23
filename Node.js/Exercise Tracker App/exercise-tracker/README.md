@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Code Credits : https://github.com/beaucarnes/mern-exercise-tracker-mongodb
+
 ## Available Scripts
 
 In the project directory, you can run:
